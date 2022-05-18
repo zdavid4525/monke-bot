@@ -53,7 +53,7 @@ async def on_message(message):
     return
 
   msg = message.content
-
+  print('test')
   if msg.startswith('?plshappi'):
     quote = get_quote()
     await message.channel.send(quote)
